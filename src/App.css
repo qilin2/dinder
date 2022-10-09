@@ -1,38 +1,215 @@
-#root {
-  max-width: 1280px;
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap');
+
+/* App Interface */
+.App {
+  text-align: center;
+  font-family: 'Gemunu Libre', sans-serif;
+}
+
+body {
+  /* background-color: #F6C123; */
+  background-image: url('./images/vaporwave_background.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+} 
+
+/* Class */
+/* Section 1: HEADER */
+.nav{
+  padding: 10px;
+  color: #F27499;
+  font-size: 350%;
+  border-width: 2.5px;
+  border-bottom: 5px solid gray;
+  place-items: center;
+}
+
+.icon {
+  display:flexbox;
+
+}
+
+/* Section 2: BODY  */
+/* Component: Sidebar */
+.sidebar-container{
+  margin: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.Sidebar{
+  margin: 5px;
+  display: inline-block;
+  height: 80vh;
+  width: 50vh;
+  border: 10px lightslategray;
+  border-style: groove;
+  background-color: #F27499;
+  position: fixed;
+  left: 0;
+}
+
+/* Component: Input */
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin : auto;
+  
+}
+.inputBox {
+  width: 37.5vw;
+  margin: auto;
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 10px;
+  border: 10px gray;
+  border-style: groove;
+}
+
+/* Component: Image */
+.sprite {
+  position: fixed;
+  right: 17.5%;
+  bottom: 7.5px;
+}
+
+/* Component: Output */
+.output {
+  display: inline-block;
+  height: 25vh;
+  width: 25vw;
+  position: fixed;
+  right: 10px;
+  margin: 5px;
+  border: 10px lightsteelblue;
+  border-style: groove;
+  background-color: #F27499;
+;
+}
+
+/* Section 3: Code Blocks */
+.NestBlockPlaceholder {
+  padding: 4px;
+  background-color: #53F1E9;  
+  display: inline-flex;
+  align-items: center;
+}
+
+.ListHolder {
+  background:#F27499;
+  padding: 0px 10px;
+  height: 56px;
+  margin: 0px 5px;
+
+  display: inline-flex;
+  align-items: center;
+  
+}
+.ListHolder > div {
+  margin: 0 5px;
+}
+
+.TextHolder {
+  background:#E29521;
+  padding: 10px 10px;
+  margin: 0px 5px;
+  width: 50px;
+
+  display: inline-block;  
+  outline: none;
+  border:none;
+  box-shadow: none;
+}
+
+.TextHolder:focus {
+  outline: none;
+  border:none;
+}
+
+.Container {
+  display: block;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  width: 80vw;
 }
 
-.toggle-posting {
+.NestBlock {
   display: flex;
-  width: 100%;
-  justify-content: space-around;
+  flex-direction: column;
+  align-content: left;
+  justify-content: center;
+  color: black;
+    text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px rgb(0, 174, 255),
+    0 0 80px rgb(0, 174, 255),
+    0 0 90px rgb(0, 174, 255),
+    0 0 100px #0ff,
+    0 0 150px #0ff;
 }
 
-.row-filters {
-  width: 100%;
+.NestBlockBody {
   display: flex;
-  justify-content: space-around;
+  min-height: 40px;
+  height: 1px;
+  background: #F27499;
+  
 }
 
-.student-carousel {
+.NestBlockBodyBar {
+  background: #E29521;
+  width: 20px;
+  height: 100%;
+  display: block;
+}
+
+.NestBlockBodyBody {
+  background:#7D2879;
+  
+}
+
+.NestBlockEnd {
+  background: #E29521;
   width: 100%;
-  /* background-color: black; */
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  height: 20px;
 }
 
-.student-carousel .card {
-  margin-top: 10px;
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
 }
 
-.student-carousel .button-container {
-  width: 100%;
-  text-align: center;
-  padding-bottom: 10px;
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes RubberBand {
+  
 }
